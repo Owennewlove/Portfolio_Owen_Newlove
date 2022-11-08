@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './header/header'
+import Nav from './nav/nav';
+import Experience from './experience/experience'
+import About from './about/about';
+import Contact from './contact/contact';
+import Footer from './footer/footer';
+
+
 
 import {
   ApolloClient,
@@ -9,6 +17,7 @@ import {
 } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
+import Contact from './contact/contact';
 
 const httpLink = createHttpLink({
   uri: '/graphql'
@@ -22,22 +31,19 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+    <Header/>
+    <Nav/>
+    <About/>
+    <Experience/>
+    <Contact/>
+    <Footer/>
+    
+    </>
+
+
+
   );
 }
 
