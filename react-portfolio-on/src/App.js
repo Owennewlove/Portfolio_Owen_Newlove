@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './header/header'
-import Nav from './nav/nav';
-import Experience from './experience/experience'
-import About from './about/about';
-import Contact from './contact/contact';
-import Footer from './footer/footer';
+import Header from './components/header/header'
+import Nav from './components/nav/nav';
+import Experience from './components/experience/experience'
+import About from './components/about/about';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 
 

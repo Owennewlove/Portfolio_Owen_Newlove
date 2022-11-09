@@ -18,7 +18,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'IBM Plex Serif', serif;
-  
+  background-image: url(../src/assets/11a73c083d31797fe216914dcdf26023.jpg);
+
 
 }
 
@@ -33,4 +34,11 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
 }
