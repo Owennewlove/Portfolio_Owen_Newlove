@@ -4,7 +4,11 @@ import './footer.css'
 const Footer = () => {
 
     return (
-        <p>Footer</p>
+        <section id='footer'>
+            <p>Footer</p>
+
+        </section>
+        
     )
   
   

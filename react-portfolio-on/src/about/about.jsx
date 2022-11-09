@@ -4,10 +4,14 @@ import './about.css'
 const About = () => {
 
     return (
-        <p>About</p>
+
+        <section id='about'>
+            <p>About</p>
+        </section>
+
     )
-  
-  
+
+
 }
 
 
