@@ -1,0 +1,40 @@
+
+#experience {
+    text-align: center;
+
+}
+
+
+.experienceImage {
+    z-index: 1;
+    
+}
+.expImages {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+}
+
+.imgCard {
+    margin: 25px;
+    flex-basis: 25%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--color-primary);
+    box-shadow: 8px 12px var(--color-bg-variant);
+    cursor: pointer;
+
+
+}
+
+.imgCard:hover {
+    border-color: var(--color-primary-variant);
+    box-shadow: 8px 12px var(--color-cream);
+}
+

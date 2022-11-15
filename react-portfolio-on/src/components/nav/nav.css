@@ -3,9 +3,39 @@
 
 
 nav {
+    background: rgba(0, 0, 0, 0);
     text-align: center;
     font-family: 'IBM Plex Serif', serif;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
 
+}
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+
+
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.312)
+}
+
+nav a.active {
+    background: var(--color-bg);
+    color: var(--color-cream);
 }
 
 .navButton {
@@ -16,7 +46,7 @@ nav {
     border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
-    background-color: #f5f5dc;
+    background-color: var(--color-primary);
     font-family: 'IBM Plex Serif', serif;
     
     

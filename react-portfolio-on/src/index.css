@@ -10,16 +10,38 @@
   text-decoration: none;
 }
 
-body {
+:root {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'IBM Plex Serif', serif;
-  background-image: url(../src/assets/11a73c083d31797fe216914dcdf26023.jpg);
+  
+  --color-bg: #1f284c;
+  --color-bg-variant: #2D4472;
+  --color-primary: #d9ccac;
+  --color-primary-variant: #6e6352;
+  --color-cream: #ece2c6;
+  --color-light: rgba(255, 255, 255, 0.794);
 
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+
+
+
+
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+  background: var(--color-bg);
+  background-image: url(../src/assets/grid-png-hd-5.png);
+  line-height: 1.7;
+  
 
 }
 
@@ -41,4 +63,47 @@ img {
   width: 100%;
   object-fit: cover;
 
+}
+
+section {
+  margin-top: 8rem;
+
+}
+
+section > h2 {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.color-light{
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+
+}
+
+a:hover {
+  color: var(--color-cream)
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-primary-variant);
+  transition: var(--transition);
+  
+
+}
+
+.btn:hover {
+  background: var(--color-cream);
+  color: var(--color-bg);
+  border-color: transparent;
 }
